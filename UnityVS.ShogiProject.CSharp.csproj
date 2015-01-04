@@ -51,7 +51,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Koma.cs" />
+    <ProjectReference Include="UnityVS.ShogiProject.CSharp.Plugins.csproj">
+      <Project>{E971759A-8745-5D70-25B3-DC68CC50ECC9}</Project>
+      <Name>UnityVS.ShogiProject.CSharp.Plugins</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Scripts\Direction.cs" />
+    <Compile Include="Assets\Scripts\Koma.cs" />
+    <Compile Include="Assets\Scripts\KomaOu.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
 </Project>
